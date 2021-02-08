@@ -11,6 +11,9 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {AppRoutingModule,routingComponents} from './app-routing.module';
+import { CartComponent } from './cart/cart.component';
+import { InfoComponent } from './info/info.component';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 @NgModule({
   declarations: [
@@ -18,13 +21,16 @@ import {AppRoutingModule,routingComponents} from './app-routing.module';
     routingComponents,
     WelcomeComponent,
     ProductsComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    CartComponent,
+    InfoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    MatCarouselModule.forRoot(),
 
   ],
   providers: [],
