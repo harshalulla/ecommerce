@@ -13,6 +13,7 @@ const routes: Routes = [
   {path:'checkout',component:CheckoutComponent},
   {path:'cart',component:CartComponent},
   {path:'signout',component:CartComponent},
+  {path: '', redirectTo: '/welcome', pathMatch: 'full'}
 ];
 
 @NgModule({
